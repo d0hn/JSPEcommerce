@@ -1,0 +1,474 @@
+$colourbase: #4a4a4a;
+$textbase: #fff;
+$purple: #303464;
+$family:'Lato',sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+body {
+	margin:0!important;
+	padding:0!important;
+	background-color:#EBEEF1;
+	font-family:$family;
+	h1 {
+		font-family:'Lato', sans-serif;
+		font-weight:300;
+		font-size:20px;
+	}
+
+}
+	
+nav {
+	width:100%;
+	font-family: $family;
+	font-weight:300;
+	background-color:#C9CDD0;
+	form {
+				display: inline;
+				float:right;
+				margin-top: -32px;
+				color:$textbase;
+				input[type="text"] {
+					    border: none;
+    					height: 21px;
+    					padding-top: 5px;
+				}
+			}
+			button {
+				border: none;
+			    color: white;
+			    background: none;
+    			padding: 10px 10px 6px 10px;
+    			transition: all 0.5s ease;
+    			cursor: default;
+			    fa {
+			    	margin-top:-5px;
+			    	font-size:18px;
+			    }
+			}
+			button:hover {
+				background-color:$purple;
+			}
+	.logo {
+		width:100%;
+		height:70px;
+		img {
+			width:150px;
+			margin-left:1em;
+		}
+
+	}
+	ul {
+		height:auto;
+		padding: 10px 0;
+		margin:0px;
+		//position: absolute;
+		left:110px;
+		top:10px;
+		a {
+				transition: all 0.5s ease;
+				padding: 4px;
+				color:$textbase;
+			}
+			a:-webkit-any-link {
+				text-decoration:none;
+			}
+			a:hover {
+				background-color:$purple;
+				color:$textbase;
+			}
+
+		
+		li {
+			width:150px;
+			display: inline;
+			padding:5px;
+			color: $textbase;
+			//background-color: $colourbase;
+
+				
+			
+			
+		}
+
+	}
+}
+.topbar {
+	width:100%;
+	height:25px;
+	position:relative;
+	background-color:$purple;
+	color:$textbase;
+	font-family:$family;
+
+		a {
+			color:$textbase;
+			text-decoration: none;
+		}
+	}
+.flright {
+				float:right;
+			}
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.listing {
+	//width:40%;
+	padding:20px;
+	font-family:$family;
+	.genre {
+		width: 150px;
+    background-color: #252525;
+    padding: 8px;
+    color: white;
+    margin-bottom: 0px;
+	}
+	img {
+		height:100px;
+		width:100px;
+		border: 3px solid #3C434E;
+    	margin-top: 74px;
+	}
+	.description {
+		    width: 82%;
+    //background-color: #E6E6E6;
+    position: relative;
+    margin-left: 110px;
+    margin-top: -107px;
+		    .info {
+		    	padding:0px 5px 5px 14px;
+		    	.price {
+		    		background-color: #252525;
+				    color: white;
+				    width: 138px;
+				    padding: 8px;	    		
+		    	}
+		    }
+	}
+	.listleft {
+		float:left;
+	}
+	.listid {
+		float:right;
+	}
+	.title {
+		padding:5px;
+		font-size:20px;
+		color:$textbase;
+		background-color:#3C434E;
+	 	max-width: 600px;
+	 	width:55%;
+    	position: absolute;
+    	font-weight:300;
+	}
+}
+#main {
+	max-width:1000px;
+	margin:0 auto;
+}
+.container {
+	overflow:hidden;
+	float:left;
+	font-weight:100;
+
+	color:#484848;
+	width: 60%;
+	p {
+		
+		line-height: 30px;
+	}
+}
+.sidebar {
+	float:right;
+	width:250px;
+	.recent {
+		h4 {
+			background-color:#252525;
+			font-weight: 200;
+			padding:5px;
+			color:$textbase;
+			
+		}
+		.recentitems {
+				background-color:white;
+				padding:5px;
+				margin-top: -22px;
+				ul {
+					padding:0;
+					margin:0;
+					a{
+						text-decoration: none;
+    					color: #4a4a4a;
+    					list-style: none
+					}
+					li {
+						border-bottom: solid 1px #DEDEDE;
+    					padding-bottom: 14px;
+    					padding-top: 10px;
+					}
+				}
+			}
+	}
+}
+#spinner {
+	padding: 29px;
+    text-align: center;
+    #img-spinner {
+    	padding-top: 25px;
+    }
+}
+.tablelayout {
+	border-bottom: 1px solid #D7DADC;
+    padding-bottom: 21px;
+    padding-top: 8px;
+    transition:all 0.5s ease;
+
+}
+.tablelayout:hover {
+	background-color: #DADDE0;
+}
+.thtitle {
+	width:400px;
+	text-align:left;
+}
+.thdesc {
+	width:100px;
+	text-align:center;
+}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	font-size:20px;
+	text-align:center;
+	background:rgb(249,249,249);
+}
+.formcat {
+
+}
+
+.logout {
+	float: right;
+    padding-right: 30px;
+}
+.login {
+	padding-left:30px;
+}
+.logged {
+	padding-left:30px;
+}
+.profile {
+	float: right;
+    padding-right: 30px;
+}
+.iconz {
+    color:$purple;
+    padding:5px;
+}
+.welcomelogin {
+	margin:0 auto;
+	margin-top:20px;
+	text-align:center;
+	transition:all 0.5s ease;
+	h2 {
+		 background-color: $purple;
+		    color:white;
+		    font-weight: 200;
+	}
+
+}
+.formlogin {
+	    background-color: white;
+    width: 219px;
+    padding: 50px;
+    margin: 0 auto;
+    border: 1px solid #DFDFDF;
+    -webkit-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+transition:all 0.5s ease;
+h2 {
+		   
+    /* padding-left: 7px; */
+    position: relative;
+    top: -70px;
+    width: 112%;
+    left: -50px;
+    padding-bottom: 5px;
+    margin-bottom: -43px;
+	}
+}
+.formreg {
+	background-color: white;
+    width: 219px;
+    padding: 50px;
+    margin: 0 auto;
+    border: 1px solid #DFDFDF;
+    -webkit-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+transition:all 0.5s ease;
+form {
+	
+}
+h2 {
+	    
+}
+}
+.headtitle {
+	width: 219px;
+    position: relative;
+    margin-top: -51px;
+    left: -50px;
+}
+.logtitle {
+	cursor:pointer;
+	
+}
+.headtitle {
+	cursor:pointer;
+
+	}
+	.admin-home {
+		.admin-base {
+			.logo {
+				width: 10%;
+			}
+		
+		.admin-login {
+			.iconz {
+				font-size: 12px;
+				color:$purple;
+			}
+			.form-admin {
+				padding-top:40px;
+				padding-bottom:40px;
+			}
+		    background-color: white;
+		    width: 500px;
+		    //height: 200px;
+		    text-align: center;
+		    margin: 0 auto;
+		        border: 1px solid #DFDFDF;
+    -webkit-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.35);
+		    }
+		   
+		}
+		
+	}
+	.logo-area {
+		text-align: center;
+		margin:0 auto;
+		padding:20px;
+		h3 {
+			    background-color: $purple;
+			    color:$textbase;
+    			width: 180px;
+    			font-weight:100;
+    			margin: 0 auto;
+		}
+	}
+	 .btn-submit {
+		    	background-color: $purple;
+			    border: 1px solid #EBEEF1;
+			    height: 22px;
+			    width: 71px;
+	    		color:$textbase!important;
+	    		transition: all 0.5s ease;
+		    }
+		    .btn-submit:hover {
+		    	color:$purple!important;
+		    	background-color:$textbase!important;
+		    }
+.adminloginhref {
+	text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    top: 46px;
+    color: #CAC9C9;
+}
+
+.sort {
+	font-weight: 100;
+    padding: 14px;
+    background-color: #252525;
+    width: 325px;
+    margin-left: 20px;
+    color:$textbase;
+    margin-top: 20px;
+    a {
+    	text-decoration: none;
+    	    color:#B6BDFF;
+
+    }
+}
+.prices {
+	margin-left: 20px;
+    margin-top: 25px;
+    background-color: #C9CDD0;
+    padding: 10px;
+    font-weight: 100;
+}
+.cart {
+	position: relative;
+    float: right;
+    margin-top: -100px;
+    padding-right: 50px;
+}
+.logerr {
+	border: 5px solid red;
+    width: 261px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    color: #404040;
+    height: 100%;
+    margin-top: 33px;
+    padding: 11px;
+    button {
+    	margin-top: 20px;
+    }
+}
+.notfound {
+	    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    width: 249px;
+    padding: 19px;
+    border: 2px red solid;
+    font-weight:100;
+    h1 {
+    	border-bottom: 1px solid #C9CDD0;
+    padding-bottom: 10px;
+    }
+    a {
+    	text-decoration: none;
+    	color:$purple;
+    	font-weight:400;
+    }
+}
+.searchresults {
+	table {
+		td {
+			width:120px;
+		}
+		tr {
+			text-align: center;
+			height:65px;
+			background-color: rgba(232, 232, 232, 0.43);
+			tranistion: all 0.5 ease;
+		}
+		tr:hover{
+			background-color: rgba(232, 232, 232, 1);
+
+		}
+	}
+}
